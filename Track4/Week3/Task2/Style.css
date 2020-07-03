@@ -1,0 +1,263 @@
+*{
+	/* background-color: #333338; */
+	color:white; 
+	text-shadow: 1px 1px #7c7c7c;
+	margin: 0px;
+	padding:0px;
+	box-sizing:border-box;
+	font-size: 20px;
+}
+
+.d{
+	background-color: Transparent;
+	letter-spacing:3px;
+}
+
+
+span{
+	background-color: Transparent;
+}
+
+select {
+   -webkit-appearance:none;
+   -moz-appearance:none;
+   -ms-appearance:none;
+   appearance:none;
+   outline:0;
+   box-shadow:none;
+   border:0!important;
+   background: #5c6664;
+   background-image: none;
+   flex: 1;
+   padding: 0 2.5em;
+   color:#fff;
+   cursor:pointer;
+   font-size: 1em;
+   font-family: 'Open Sans', sans-serif;
+}
+select::-ms-expand {
+   display: none;
+}
+.select {
+   position: relative;
+   display: flex;
+   width: 15em;
+   height: 2em;
+   line-height: 2em;
+   background: #5c6664;
+   overflow: hidden;
+   border-radius: 1em;
+}
+.select::after {
+   content: '\25BC';
+   position: absolute;
+   top: 0;
+   right: 0;
+   padding: 0 .5em;
+   background: #2b2e2e;
+   cursor:pointer;
+   pointer-events:none;
+   transition:.25s all ease;
+}
+.select:hover::after {
+   color: #23b499;
+}
+
+.select option:hover{
+	color: #23b499;
+}
+
+
+input[type=text]{
+	padding-left: 1%;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #15f4ee;
+	font-size: 20px;
+	outline: none;
+	color: #ccc;
+}
+
+.form-box2 input[type=text] {
+	width:40%;
+}
+
+input[type=text]:focus{
+	border-color: #555;
+}
+
+.form-box2{
+	max-width:550px;
+	background-color: rgba(255,255,255,0.1);
+	border-radius: 30px;
+	padding:35px;
+	box-shadow: 0.9px 0.9px #a2a3a3;
+}
+
+.form-box2 label input[type=radio]{ 
+	display:none;
+}
+
+.form-box2 label {
+	display: block;
+	cursor: pointer;
+	margin-bottom: 10px;
+	padding-left: 45px;
+	position: relative;
+}
+
+.form-box2 label .circle{
+	height: 30px;
+	width: 30px;
+	border:3px solid #ffffff;
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+	left:0;
+	top:7px;
+	transition: border-color .5s ease;
+	background-color: Transparent;
+}
+
+.form-box2 label .circle::before{
+	content: '';
+	height: 15px;
+	width: 15px;
+	background-color: #61B6A5;
+	position: absolute;
+	left:0;
+	top:0;
+	border-radius: 50%;
+	box-sizing: border-box;
+	margin-left:4px;
+	margin-top:4px;
+	transition: transform .5s ease;
+	transform: scale(0);
+}
+
+.form-box2 label span{
+	display: inline-block;
+	transition:color .5s ease;
+}
+
+.form-box2 label input:checked + .circle{
+	border-color:#61B6A5;
+}
+.form-box2 label input:checked + .circle::before{
+	transform: scale(1);
+}
+.form-box2 label input:checked + .circle + span{
+	color:#61B6A5;
+}
+
+.form-box2 label .circle:hover{
+	background-color: rgba(255,255,255,0.2);
+}
+
+.btn_{
+	padding: 5px 50px; 
+	color:white;
+	font-size:16px;
+	letter-spacing:5px;
+	border-radius: 100px;
+	transition: 1.5px;
+	margin-left:10px;
+	display:inline-block;
+	background-color: rgba(255,255,255,0.1);
+	box-shadow: 0.9px 0.9px #a2a3a3;
+
+}
+
+.bt{
+	display: -webkit-flex; 
+	display: flex;
+	background-color: Transparent;	
+}
+
+#Delete{
+	border-right: 2px #ba3122 solid;
+	border-left: 2px #f42b15 solid;
+	border-top: 2px #f42b15 solid;
+	border-bottom: 2px #ba3122 solid;
+	background-color:rgba(242, 30, 62, 0.3);;
+}
+
+#Delete:hover{ 
+	background-color:#ba3122;
+}
+
+#Add, #display_{
+	border-right: 2px #3f9a88 solid;
+	border-left: 2px #61B6A5 solid;
+	border-top: 2px #61B6A5 solid;
+	border-bottom: 2px #3f9a88 solid;
+	background-color:rgba(97,182,165, 0.3);
+}
+
+#Add:hover, #display_:hover{ 
+	background-color:#61B6A5;
+}
+
+
+#New{
+	border-right: 2px #91d82c solid;
+	border-left: 2px #a4f432 solid;
+	border-top: 2px #a4f432 solid;
+	border-bottom: 2px #91d82c solid;
+	background-color:rgba(164,244,50, 0.3);;
+}
+
+#New:hover{ 
+	background-color:#91d82c;
+}
+
+table{
+	border-radius: 10px;
+	border-collapse:collapse;
+	box-shadow:1px 1px #a2a3a3;
+	background-color:#393939; 
+	width:69%;
+	text-align:center;
+}
+table tr th{
+	border-bottom:2px solid #4b5150;
+}
+table th,td{
+	padding:10px;
+}
+
+table tr:nth-child(2n){
+	background-color:rgba(92,102,100, 0.3);
+}
+
+#C1{
+	border:1px solid #a2a3a3;
+	background-color:rgba(92,102,100, 0.3);
+}
+/* ============================ getbootstrap ============================ */
+
+.LeftSide, .RightSide{ 
+	width:100%; 
+	height:150vh; 
+}
+
+.LeftSide{
+	background-color: #222; 
+}
+.RightSide{
+	background-color: #393939;
+}
+
+@media screen and (min-width:768px){
+	.LeftSide, .RightSide{ 
+		height:200vh; 
+	}
+
+}
+
+.topX{
+	height:100vh;
+}
+.bottomX{
+	height:50vh;
+}
