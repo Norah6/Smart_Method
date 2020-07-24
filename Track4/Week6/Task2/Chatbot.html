@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+		<link rel="stylesheet" href="mystyle.css"/>
+		<title>Books Search Chatbot </title>
+	</head>
+	<body>
+		<div id="searchBox" class="#f5f5f5 grey lighten-4 z-depth-5">
+			<form id="myform">
+				<div class="input-field">
+					<input type="search" id="books">
+					<label for="search">Search Books</label>
+				</div>
+				<button class="btn #00c89c">Search Books</button>
+			</form>
+		</div>
+		
+		<section class="recomended-sec">
+			<div class="title1">
+				<h2> books</h2>
+				<hr>
+			</div>
+		</section>
+		
+		<div id="result" class="background">
+			
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+		<script src="myscript.js"></script>
+		<script>
+		  window.watsonAssistantChatOptions = {
+			  integrationID: "f2d136d7-72ff-4b75-8bad-068ef98d2e79", // The ID of this integration.
+			  region: "eu-gb", // The region your integration is hosted in.
+			  serviceInstanceID: "82ba408a-a9c8-4de8-86ca-049e76a19da1", // The ID of your service instance.
+			  onLoad: function(instance) { instance.render(); }
+			};
+		  setTimeout(function(){
+			const t=document.createElement('script');
+			t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+			document.head.appendChild(t);
+		  });
+		</script>
+		
+	</body>
+</html>
